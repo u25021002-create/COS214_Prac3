@@ -1,4 +1,5 @@
 #include "MainGate.h"
+#include "EventNotice.h"
 #include <iostream>
 
 MainGate::MainGate(const std::string& name, int capacity)
@@ -24,4 +25,25 @@ bool MainGate::admit(int count) {
     if (!open_ || admitted + count > capacity) return false;
     admitted += count;
     return true;
+}
+
+bool MainGate::atCapacity() const { return admitted >= capacity; }
+
+void MainGate::update(const EventNotice& notice) {
+    switch (notice.getType()) {
+        case OPEN:
+        case RESUME:
+            open();
+            break;
+        case CAPACITY_ALERT:
+        case EVACUATE:
+            close();
+            break;
+        case WEATHER_ALERT:
+            std::cout << name << ": still admitting, shelter directions given "
+                      << "at the turnstile.\n";
+            break;
+        default:
+            break;
+    }
 }

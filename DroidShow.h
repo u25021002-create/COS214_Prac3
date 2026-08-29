@@ -2,6 +2,9 @@
 #define DROIDSHOW_H
 
 #include "EventUnit.h"
+#include <string>
+
+class EventNotice;
 
 /**
  * @brief Concrete Leaf: live droid demonstration show.
@@ -17,8 +20,15 @@ public:
     void close() override;
     void reportStatus() const override;
 
+    /**
+     * @brief Reacts to a notice pushed by a subject this unit is attached to.
+     * @param notice The notice being delivered.
+     */
+    void update(const EventNotice& notice) override;
+
 private:
     bool running;
+    std::string nextShowTime; ///< Moved by a SCHEDULE_CHANGE notice.
 };
 
 #endif

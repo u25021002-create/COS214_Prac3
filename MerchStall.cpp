@@ -1,4 +1,5 @@
 #include "MerchStall.h"
+#include "EventNotice.h"
 #include <iostream>
 
 MerchStall::MerchStall(const std::string& name, int capacity)
@@ -22,4 +23,23 @@ void MerchStall::reportStatus() const {
 
 void MerchStall::sell(int units) {
     stock = (units > stock) ? 0 : stock - units;
+}
+
+void MerchStall::update(const EventNotice& notice) {
+    switch (notice.getType()) {
+        case OPEN:
+        case RESUME:
+            open();
+            break;
+        case WEATHER_ALERT:
+            std::cout << name << ": indoors under canvas, trading continues.\n";
+            break;
+        case PAUSE:
+        case CAPACITY_ALERT:
+        case EVACUATE:
+            close();
+            break;
+        default:
+            break;
+    }
 }

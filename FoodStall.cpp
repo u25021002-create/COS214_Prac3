@@ -1,4 +1,5 @@
 #include "FoodStall.h"
+#include "EventNotice.h"
 #include <iostream>
 
 FoodStall::FoodStall(const std::string& name, int capacity)
@@ -21,4 +22,25 @@ void FoodStall::reportStatus() const {
               << (open_ ? "SERVING" : "CLOSED")
               << ", cooking=" << (cookingActive ? "ON" : "OFF")
               << ", capacity=" << capacity << "\n";
+}
+
+void FoodStall::update(const EventNotice& notice) {
+    switch (notice.getType()) {
+        case OPEN:
+        case RESUME:
+            open();
+            break;
+        case WEATHER_ALERT:
+            // Open flame under canvas in high wind: unlike MerchStall, this
+            // stall must shut down on the same notice.
+            std::cout << name << ": open flame is unsafe in this weather.\n";
+            close();
+            break;
+        case PAUSE:
+        case EVACUATE:
+            close();
+            break;
+        default:
+            break;
+    }
 }

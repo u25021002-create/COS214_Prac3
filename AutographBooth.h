@@ -3,6 +3,8 @@
 
 #include "EventUnit.h"
 
+class EventNotice;
+
 /**
  * @brief Concrete Leaf: actor/cosplayer meet-and-greet booth.
  *
@@ -19,6 +21,13 @@ public:
 
     /** @brief Adds attendees to the booth's queue, capped at capacity. */
     void joinQueue(int count);
+
+    /**
+     * @brief Reacts to a notice pushed by a subject this unit is attached to.
+     * @param notice The notice being delivered.
+     */
+    void update(const EventNotice& notice) override;
+
 
 private:
     int queueLength;

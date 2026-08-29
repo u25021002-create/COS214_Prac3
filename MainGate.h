@@ -3,6 +3,8 @@
 
 #include "EventUnit.h"
 
+class EventNotice;
+
 /**
  * @brief Concrete Leaf: main entry gate.
  *
@@ -19,6 +21,16 @@ public:
 
     /** @brief Admits attendees if the gate is open and under capacity. */
     bool admit(int count);
+
+    /** @brief Returns true once the admitted count has reached capacity. */
+    bool atCapacity() const;
+
+    /**
+     * @brief Reacts to a notice pushed by a subject this unit is attached to.
+     * @param notice The notice being delivered.
+     */
+    void update(const EventNotice& notice) override;
+
 
 private:
     int admitted;

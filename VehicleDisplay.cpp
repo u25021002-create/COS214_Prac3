@@ -1,4 +1,5 @@
 #include "VehicleDisplay.h"
+#include "EventNotice.h"
 #include <iostream>
 
 VehicleDisplay::VehicleDisplay(const std::string& name, int capacity)
@@ -20,4 +21,22 @@ void VehicleDisplay::reportStatus() const {
     std::cout << "[VehicleDisplay] " << name << " - "
               << (covered ? "COVERED" : "ON DISPLAY")
               << ", capacity=" << capacity << "\n";
+}
+
+void VehicleDisplay::update(const EventNotice& notice) {
+    switch (notice.getType()) {
+        case OPEN:
+            open();
+            break;
+        case WEATHER_ALERT:
+        case EVACUATE:
+            if (!covered) close();
+            else std::cout << name << ": already covered, no action needed.\n";
+            break;
+        case RESUME:
+            if (covered) open();
+            break;
+        default:
+            break;
+    }
 }

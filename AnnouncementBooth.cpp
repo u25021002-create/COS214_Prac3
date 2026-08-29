@@ -1,4 +1,5 @@
 #include "AnnouncementBooth.h"
+#include "EventNotice.h"
 #include <iostream>
 
 AnnouncementBooth::AnnouncementBooth(const std::string& name, int capacity)
@@ -21,4 +22,11 @@ void AnnouncementBooth::reportStatus() const {
 
 void AnnouncementBooth::announce(const std::string& message) const {
     std::cout << name << " [PA]: " << message << "\n";
+}
+
+void AnnouncementBooth::update(const EventNotice& notice) {
+    if (notice.getType() == OPEN) open_ = true;
+    // Every notice becomes an attendee-facing announcement.
+    announce(std::string(noticeTypeName(notice.getType())) + ": "
+             + notice.getMessage());
 }
