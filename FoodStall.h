@@ -1,0 +1,33 @@
+#ifndef FOODSTALL_H
+#define FOODSTALL_H
+
+#include "EventUnit.h"
+
+class EventNotice;
+
+/**
+ * @brief Concrete Leaf: food and drinks vendor.
+ *
+ * Uses open flame/cooking equipment, so it behaves differently from
+ * MerchStall on fire/weather-related safety notices even though both are
+ * "vendor" style units.
+ */
+class FoodStall : public EventUnit {
+public:
+    FoodStall(const std::string& name, int capacity);
+
+    void open() override;
+    void close() override;
+    void reportStatus() const override;
+
+    /**
+     * @brief Reacts to a notice pushed by a subject this unit is attached to.
+     * @param notice The notice being delivered.
+     */
+    void update(const EventNotice& notice) override;
+
+private:
+    bool cookingActive;
+};
+
+#endif
