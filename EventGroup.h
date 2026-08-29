@@ -7,14 +7,14 @@
 /**
  * @brief Concrete Composite in the Composite pattern.
  *
- * EventGroup represents a grouping/area of the event (e.g. a zone) that can
+ * EventGroup represents a grouping/area of the event that can
  * contain both EventUnit leaves and other EventGroup composites, forming a
  * genuine part-whole tree. EventGroup owns every child it holds: when an
  * EventGroup is destroyed, it deletes all of its owned children, and that
  * deletion recurses down the tree exactly once per object.
  *
- * Ownership (this Composite tree) is deliberately kept separate from
- * Observer registration (see Subject/Observer), which is added in Task 3.
+ * Ownership is deliberately kept separate from
+ * Observer registration.
  */
 class EventGroup : public EventComponent {
 public:
@@ -44,8 +44,8 @@ public:
     /**
      * @brief Removes a child component from this group without deleting it.
      *
-     * Used when transferring a unit between groups (see Task 4.2): the
-     * caller (or the destination group) becomes responsible for its
+     * Used when transferring a unit between groups: the
+     * caller becomes responsible for its
      * lifetime after removal. If the pointer is not found, this is a no-op.
      * @param component Pointer to the child to remove.
      */
@@ -60,7 +60,7 @@ public:
     size_t childCount() const;
 
 protected:
-    std::vector<EventComponent*> children; ///< Owned children (structural ownership).
+    std::vector<EventComponent*> children; /// Owned children (structural ownership).
 };
 
 #endif

@@ -8,8 +8,7 @@
  * @brief Concrete Leaf: PA/announcement booth.
  *
  * Distinct from every other leaf: instead of changing its own physical
- * state on open/close, it broadcasts a message. In Task 3 this becomes the
- * unit that turns received notices into attendee-facing announcements.
+ * state on open/close, it broadcasts a message.
  */
 class AnnouncementBooth : public EventUnit {
 public:

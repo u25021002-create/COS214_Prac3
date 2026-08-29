@@ -6,8 +6,8 @@
 /**
  * @brief Abstract Leaf base class in the Composite pattern.
  *
- * EventUnit represents a single operational unit at Star Wars Fan Day
- * (e.g. a gate, a stall, a display). It has no children: getCapacity()
+ * EventUnit represents a single operational unit at Star Wars Fan Day. 
+ * It has no children: getCapacity()
  * operates only on this unit's own state. Concrete leaves override
  * open()/close()/reportStatus() to give each unit meaningfully different
  * behaviour.

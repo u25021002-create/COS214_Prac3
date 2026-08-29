@@ -11,8 +11,7 @@ void MedicalTent::open() {
 
 void MedicalTent::close() {
     // Medical stays open even when "close" is called on the tree, unless
-    // this is a full evacuation; that decision is made in Task 3/4 via
-    // notice-specific update() logic, not here.
+    // this is a full evacuation; 
     std::cout << name << ": medical remains operational.\n";
 }
 
