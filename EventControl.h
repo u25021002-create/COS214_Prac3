@@ -38,7 +38,9 @@ public:
      */
     void issueSafetyNotice(NoticeType type, const std::string& message, int severity);
 
-    /** @brief Returns how many notices this control centre has issued. */
+    /** @brief Returns how many notices this control centre has issued.
+     * @return running count of notices issued 
+     */
     int getNoticesIssued() const;
 
 private:

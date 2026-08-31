@@ -27,6 +27,7 @@ public:
      */
     EventUnit(const std::string& name, int capacity);
 
+    /** @brief Virtual destructor ensures correct polymorphism destruction */
     virtual ~EventUnit();
 
     int getCapacity() const override;

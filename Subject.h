@@ -57,7 +57,9 @@ public:
      */
     void notify(const EventNotice& notice);
 
-    /** @brief Returns how many observers are currently registered. */
+    /** @brief Returns how many observers are currently registered. 
+     *  @return num of curr registered observers 
+    */
     int getObserverCount() const;
 
 protected:

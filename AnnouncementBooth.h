@@ -15,13 +15,21 @@ class EventNotice;
  */
 class AnnouncementBooth : public EventUnit {
 public:
+    /**
+    * @brief constrcts an announcement booth
+    * @param name displays name of booth
+    * @param capacity Nominal capc
+    */
     AnnouncementBooth(const std::string& name, int capacity);
 
     void open() override;
     void close() override;
     void reportStatus() const override;
 
-    /** @brief Broadcasts a message to attendees over the PA system. */
+    /** 
+     * @brief Broadcasts a message to attendees over the PA system.
+     * @param message text to announce
+     */
     void announce(const std::string& message) const;
 
     /**

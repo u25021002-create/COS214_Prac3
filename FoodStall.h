@@ -14,6 +14,11 @@ class EventNotice;
  */
 class FoodStall : public EventUnit {
 public:
+    /**
+     * @brief constrcts food& drink vendor stall
+     * @param name display name of stall
+     * @param capacity Max serving 
+     */
     FoodStall(const std::string& name, int capacity);
 
     void open() override;

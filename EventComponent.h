@@ -38,7 +38,9 @@ public:
      */
     virtual int getCapacity() const = 0;
 
-    /** @brief Returns the display name of this component. */
+    /** @brief Returns the display name of this component.
+     *  @return the comps display name
+     */
     const std::string& getName() const;
 
 protected:

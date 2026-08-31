@@ -20,6 +20,7 @@ public:
      */
     DisplayZone(const std::string& name, bool outdoor);
 
+    /** @brief Desroy this zone and all exhibit it owns  */
     ~DisplayZone() override;
 
     /**
@@ -31,7 +32,9 @@ public:
     void shelterAll();
 
 protected:
-    /** @brief Outdoor areas shelter on a weather alert; indoor ones do not. */
+    /** @brief Outdoor areas shelter on a weather alert; indoor ones do not. 
+      * @param notice the notice being handled
+    */
     void applyLocalPolicy(const EventNotice& notice) override;
 
 private:
