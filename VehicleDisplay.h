@@ -16,7 +16,7 @@ public:
     /**
      * @brief constructs a static replica vehical exhibit
      * @param name display name of exhibit 
-     * @param capcity man num of vistors can host at time 
+     * @param capacity man num of vistors can host at time 
      */
     VehicleDisplay(const std::string& name, int capacity);
 
@@ -31,7 +31,7 @@ public:
     void update(const EventNotice& notice) override;
 
 private:
-    bool covered;
+    bool covered; ///< True while the vehicls are covered
 };
 
 #endif

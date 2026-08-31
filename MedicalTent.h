@@ -17,7 +17,7 @@ public:
     /**
      * @brief constrcuct an on-site mediacl support tent
      * @param name display name on tent
-     * @param capcity Max num it can assist/treat at a time
+     * @param capacity Max num it can assist/treat at a time
      */
     MedicalTent(const std::string& name, int capacity);
 
@@ -35,7 +35,7 @@ public:
     void raiseAlertLevel();
 
 private:
-    int alertLevel;
+    int alertLevel; ///< Steps up on WEATHER_ALERT/EVACUATE; resets on RESUME
 };
 
 #endif

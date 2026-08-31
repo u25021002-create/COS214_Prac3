@@ -1,0 +1,18 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classEventComponent.html" title="Abstract Component in the Composite pattern." alt="" coords="5,329,140,356"/>
+<area shape="rect" id="node2" href="$classEventGroup.html" title="Concrete Composite in the Composite pattern." alt="" coords="192,392,291,419"/>
+<area shape="rect" id="node5" href="$classEventUnit.html" title="Abstract Leaf base class in the Composite pattern." alt="" coords="198,233,285,260"/>
+<area shape="rect" id="node3" href="$classDisplayZone.html" title="Composite with its own policy: an area whose exhibits stand outdoors." alt="" coords="370,411,474,437"/>
+<area shape="rect" id="node4" href="$classPrepZone.html" title="Composite with its own policy: the back&#45;of&#45;house preparation area." alt="" coords="380,461,464,488"/>
+<area shape="rect" id="node6" href="$classAnnouncementBooth.html" title="Concrete Leaf: PA/announcement booth." alt="" coords="343,309,501,336"/>
+<area shape="rect" id="node7" href="$classAutographBooth.html" title="Concrete Leaf: actor/cosplayer meet&#45;and&#45;greet booth." alt="" coords="359,360,485,387"/>
+<area shape="rect" id="node8" href="$classDroidShow.html" title="Concrete Leaf: live droid demonstration show." alt="" coords="376,5,468,32"/>
+<area shape="rect" id="node9" href="$classFoodStall.html" title="Concrete Leaf: food and drinks vendor." alt="" coords="381,56,463,83"/>
+<area shape="rect" id="node10" href="$classMainGate.html" title="Concrete Leaf: main entry gate." alt="" coords="379,107,465,133"/>
+<area shape="rect" id="node11" href="$classMedicalTent.html" title="Concrete Leaf: on&#45;site medical support." alt="" coords="372,157,472,184"/>
+<area shape="rect" id="node12" href="$classMerchStall.html" title="Concrete Leaf: merchandise vendor stall." alt="" coords="377,208,467,235"/>
+<area shape="rect" id="node13" href="$classVehicleDisplay.html" title="Concrete Leaf: a static replica vehicle exhibit." alt="" coords="363,259,481,285"/>
+<area shape="rect" id="node14" href="$classObserver.html" title="Abstract Observer in the Observer pattern." alt="" coords="32,243,113,269"/>
+<area shape="rect" id="node15" href="$classSubject.html" title="Abstract Subject in the Observer pattern." alt="" coords="37,417,108,444"/>
+<area shape="rect" id="node16" href="$classEventControl.html" title="Concrete Subject: the event control centre that raises notices." alt="" coords="188,443,295,469"/>
+</map>

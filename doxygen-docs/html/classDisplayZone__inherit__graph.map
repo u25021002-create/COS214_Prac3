@@ -1,0 +1,7 @@
+<map id="DisplayZone" name="DisplayZone">
+<area shape="rect" id="node1" title="Composite with its own policy: an area whose exhibits stand outdoors." alt="" coords="205,505,361,627"/>
+<area shape="rect" id="node2" href="$classEventGroup.html" title="Concrete Composite in the Composite pattern." alt="" coords="205,233,361,457"/>
+<area shape="rect" id="node3" href="$classEventComponent.html" title="Abstract Component in the Composite pattern." alt="" coords="5,5,176,185"/>
+<area shape="rect" id="node4" href="$classSubject.html" title="Abstract Subject in the Observer pattern." alt="" coords="200,20,365,171"/>
+<area shape="rect" id="node5" href="$classObserver.html" title="Abstract Observer in the Observer pattern." alt="" coords="389,49,507,141"/>
+</map>

@@ -32,7 +32,7 @@ public:
     void update(const EventNotice& notice) override;
 
 private:
-    bool cookingActive;
+    bool cookingActive; ///< True while cooking eqip is run
 };
 
 #endif

@@ -37,7 +37,7 @@ public:
 
 
 private:
-    int queueLength;
+    int queueLength; ///< Curr num of people queued
 };
 
 #endif

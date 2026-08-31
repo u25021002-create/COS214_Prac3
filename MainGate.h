@@ -43,7 +43,7 @@ public:
 
 
 private:
-    int admitted;
+    int admitted; ///< Rn count of people admited so far
 };
 
 #endif

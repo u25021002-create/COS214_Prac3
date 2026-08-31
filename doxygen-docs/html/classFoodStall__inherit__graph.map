@@ -1,0 +1,6 @@
+<map id="FoodStall" name="FoodStall">
+<area shape="rect" id="node1" title="Concrete Leaf: food and drinks vendor." alt="" coords="111,403,238,539"/>
+<area shape="rect" id="node2" href="$classEventUnit.html" title="Abstract Leaf base class in the Composite pattern." alt="" coords="112,233,237,355"/>
+<area shape="rect" id="node3" href="$classEventComponent.html" title="Abstract Component in the Composite pattern." alt="" coords="5,5,176,185"/>
+<area shape="rect" id="node4" href="$classObserver.html" title="Abstract Observer in the Observer pattern." alt="" coords="200,49,317,141"/>
+</map>

@@ -43,7 +43,7 @@ public:
     void update(const EventNotice& notice) override = 0;
 
 protected:
-    int capacity;
+    int capacity; ///< Max capacity of this unit
 };
 
 #endif

@@ -1,0 +1,7 @@
+<map id="Subject" name="Subject">
+<area shape="rect" id="node1" title="Abstract Subject in the Observer pattern." alt="" coords="97,5,263,156"/>
+<area shape="rect" id="node2" href="$classEventControl.html" title="Concrete Subject: the event control centre that raises notices." alt="" coords="5,241,171,391"/>
+<area shape="rect" id="node3" href="$classEventGroup.html" title="Concrete Composite in the Composite pattern." alt="" coords="195,204,351,428"/>
+<area shape="rect" id="node4" href="$classDisplayZone.html" title="Composite with its own policy: an area whose exhibits stand outdoors." alt="" coords="105,476,261,597"/>
+<area shape="rect" id="node5" href="$classPrepZone.html" title="Composite with its own policy: the back&#45;of&#45;house preparation area." alt="" coords="285,476,443,597"/>
+</map>
