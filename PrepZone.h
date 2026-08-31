@@ -35,7 +35,9 @@ public:
     bool releaseToDisplay(EventComponent* unit, EventGroup* target);
 
 protected:
-    /** @brief Reports how many exhibits are ready when the event opens. */
+    /** @brief Reports how many exhibits are ready when the event opens. 
+     *  @param notice notice being handled 
+    */
     void applyLocalPolicy(const EventNotice& notice) override;
 
 private:

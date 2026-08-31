@@ -13,6 +13,11 @@ class EventNotice;
  */
 class VehicleDisplay : public EventUnit {
 public:
+    /**
+     * @brief constructs a static replica vehical exhibit
+     * @param name display name of exhibit 
+     * @param capcity man num of vistors can host at time 
+     */
     VehicleDisplay(const std::string& name, int capacity);
 
     void open() override;

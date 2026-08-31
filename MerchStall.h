@@ -13,13 +13,20 @@ class EventNotice;
  */
 class MerchStall : public EventUnit {
 public:
+    /** 
+     * @brief construct merchandise vendor stall
+     * @param name Display name of stall
+     * @param capcity Max customers 
+     */
     MerchStall(const std::string& name, int capacity);
 
     void open() override;
     void close() override;
     void reportStatus() const override;
 
-    /** @brief Sells items, decreasing stock (never below zero). */
+    /** @brief Sells items, decreasing stock (never below zero). 
+     *  @param unit Num of items sold
+    */
     void sell(int units);
 
     /**

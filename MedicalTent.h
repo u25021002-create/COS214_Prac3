@@ -14,6 +14,11 @@ class EventNotice;
  */
 class MedicalTent : public EventUnit {
 public:
+    /**
+     * @brief constrcuct an on-site mediacl support tent
+     * @param name display name on tent
+     * @param capcity Max num it can assist/treat at a time
+     */
     MedicalTent(const std::string& name, int capacity);
 
     void open() override;

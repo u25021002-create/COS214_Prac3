@@ -50,16 +50,24 @@ public:
     EventNotice(NoticeType type, const std::string& message,
                 const std::string& source, int severity = 0);
 
-    /** @brief Returns the kind of change this notice reports. */
+    /** @brief Returns the kind of change this notice reports. 
+     *  @return notices NoticeType
+    */
     NoticeType getType() const;
 
-    /** @brief Returns the human-readable detail carried with the notice. */
+    /** @brief Returns the human-readable detail carried with the notice. 
+     *  @return notices message text
+    */
     const std::string& getMessage() const;
 
-    /** @brief Returns the name of the subject that raised the notice. */
+    /** @brief Returns the name of the subject that raised the notice. 
+     *  @return og subjects name
+    */
     const std::string& getSource() const;
 
-    /** @brief Returns how urgent the notice is; 0 is routine. */
+    /** @brief Returns how urgent the notice is; 0 is routine. 
+     *  @return severtity lvl
+    */
     int getSeverity() const;
 
 private:

@@ -13,13 +13,20 @@ class EventNotice;
  */
 class AutographBooth : public EventUnit {
 public:
+    /**
+     * @brief constructs an autograph booth
+     * @param name Display name of booth
+     * @param capacity Max que len the booth can hold
+    */
     AutographBooth(const std::string& name, int capacity);
 
     void open() override;
     void close() override;
     void reportStatus() const override;
 
-    /** @brief Adds attendees to the booth's queue, capped at capacity. */
+    /** @brief Adds attendees to the booth's queue, capped at capacity.
+     * @param count Num of atendes joining que
+    */
     void joinQueue(int count);
 
     /**
