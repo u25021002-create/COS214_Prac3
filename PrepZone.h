@@ -41,7 +41,7 @@ protected:
     void applyLocalPolicy(const EventNotice& notice) override;
 
 private:
-    int vehiclesReady;
+    int vehiclesReady; ///< Count of prepared exhibits, rfresh @ open
 };
 
 #endif

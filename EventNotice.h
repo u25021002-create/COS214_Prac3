@@ -71,10 +71,10 @@ public:
     int getSeverity() const;
 
 private:
-    NoticeType type;
-    std::string message;
-    std::string source;
-    int severity;
+    NoticeType type; ///< Kind of change being reproted 
+    std::string message; ///< Human-read deatil carried with notice
+    std::string source; ///< Name of the subject that raised the notice
+    int severity; ///< 0 for routine, high for more urgent notics
 };
 
 #endif

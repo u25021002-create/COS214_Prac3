@@ -1,0 +1,40 @@
+# Doxyfile -- COS 214 Prac 3
+#
+# Everything not set here uses Doxygen's normal defaults; run
+# `doxygen -g` to see the full list if you ever need to check one.
+# Regenerate the docs with:  doxygen Doxyfile
+
+
+# Project info
+PROJECT_NAME    = "EventFlow"
+PROJECT_NUMBER  = "COS 214 Prac 3"
+PROJECT_BRIEF   = "A live event coordination engine built with the Composite and Observer design patterns"
+OUTPUT_DIRECTORY = doxygen-docs
+
+# What to document
+INPUT            = .
+RECURSIVE        = NO
+EXCLUDE          = .git
+EXCLUDE_PATTERNS = */Doxyfile* */git
+
+EXTRACT_ALL     = NO   # keep undoc mems visble in wanrnings
+EXTRACT_PRIVATE = YES
+EXTRACT_STATIC  = YES
+SOURCE_BROWSER  = YES
+
+# Warnings
+WARN_IF_UNDOCUMENTED = YES
+WARN_IF_DOC_ERROR    = YES
+WARN_NO_PARAMDOC     = YES
+WARN_LOGFILE         = doxygen_warnings.log
+
+# Output
+GENERATE_HTML  = YES
+GENERATE_LATEX = NO
+
+# Diagrams (needs Graphviz -- `apt install graphviz` / `brew install graphviz`)
+HAVE_DOT             = YES
+CLASS_GRAPH          = YES
+COLLABORATION_GRAPH  = YES
+UML_LOOK             = YES
+CALL_GRAPH           = NO

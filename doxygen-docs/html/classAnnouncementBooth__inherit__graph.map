@@ -1,0 +1,6 @@
+<map id="AnnouncementBooth" name="AnnouncementBooth">
+<area shape="rect" id="node1" title="Concrete Leaf: PA/announcement booth." alt="" coords="83,403,266,553"/>
+<area shape="rect" id="node2" href="$classEventUnit.html" title="Abstract Leaf base class in the Composite pattern." alt="" coords="112,233,237,355"/>
+<area shape="rect" id="node3" href="$classEventComponent.html" title="Abstract Component in the Composite pattern." alt="" coords="5,5,176,185"/>
+<area shape="rect" id="node4" href="$classObserver.html" title="Abstract Observer in the Observer pattern." alt="" coords="200,49,317,141"/>
+</map>

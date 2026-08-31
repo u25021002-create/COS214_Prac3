@@ -1,0 +1,4 @@
+<map id="EventControl" name="EventControl">
+<area shape="rect" id="node1" title="Concrete Subject: the event control centre that raises notices." alt="" coords="5,204,171,355"/>
+<area shape="rect" id="node2" href="$classSubject.html" title="Abstract Subject in the Observer pattern." alt="" coords="5,5,171,156"/>
+</map>

@@ -44,8 +44,8 @@ public:
     int getNoticesIssued() const;
 
 private:
-    std::string eventName;
-    int noticesIssued;
+    std::string eventName; ///< Name of event being coordinated
+    int noticesIssued; ///< Run count of notices issued 
 };
 
 #endif

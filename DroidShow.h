@@ -14,6 +14,11 @@ class EventNotice;
  */
 class DroidShow : public EventUnit {
 public:
+    /**
+     * @brief constructs a droid demo show
+     * @param name display nam of show
+     * @param capacity Max people capacity
+     */
     DroidShow(const std::string& name, int capacity);
 
     void open() override;
@@ -27,7 +32,7 @@ public:
     void update(const EventNotice& notice) override;
 
 private:
-    bool running;
+    bool running; ///< True whie the show is actively performing
     std::string nextShowTime; ///< Moved by a SCHEDULE_CHANGE notice.
 };
 

@@ -1,0 +1,13 @@
+<map id="EventUnit" name="EventUnit">
+<area shape="rect" id="node1" title="Abstract Leaf base class in the Composite pattern." alt="" coords="617,233,742,355"/>
+<area shape="rect" id="node4" href="$classAnnouncementBooth.html" title="Concrete Leaf: PA/announcement booth." alt="" coords="5,410,188,561"/>
+<area shape="rect" id="node5" href="$classAutographBooth.html" title="Concrete Leaf: actor/cosplayer meet&#45;and&#45;greet booth." alt="" coords="213,410,365,561"/>
+<area shape="rect" id="node6" href="$classDroidShow.html" title="Concrete Leaf: live droid demonstration show." alt="" coords="389,410,517,561"/>
+<area shape="rect" id="node7" href="$classFoodStall.html" title="Concrete Leaf: food and drinks vendor." alt="" coords="541,417,668,553"/>
+<area shape="rect" id="node8" href="$classMainGate.html" title="Concrete Leaf: main entry gate." alt="" coords="692,403,819,568"/>
+<area shape="rect" id="node9" href="$classMedicalTent.html" title="Concrete Leaf: on&#45;site medical support." alt="" coords="843,410,988,561"/>
+<area shape="rect" id="node10" href="$classMerchStall.html" title="Concrete Leaf: merchandise vendor stall." alt="" coords="1012,410,1139,561"/>
+<area shape="rect" id="node11" href="$classVehicleDisplay.html" title="Concrete Leaf: a static replica vehicle exhibit." alt="" coords="1163,417,1305,553"/>
+<area shape="rect" id="node2" href="$classEventComponent.html" title="Abstract Component in the Composite pattern." alt="" coords="510,5,681,185"/>
+<area shape="rect" id="node3" href="$classObserver.html" title="Abstract Observer in the Observer pattern." alt="" coords="705,49,822,141"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="EventGroup" name="EventGroup">
+<area shape="rect" id="node1" title="Concrete Composite in the Composite pattern." alt="" coords="205,233,361,457"/>
+<area shape="rect" id="node2" href="$classEventComponent.html" title="Abstract Component in the Composite pattern." alt="" coords="5,5,176,185"/>
+<area shape="rect" id="node3" href="$classSubject.html" title="Abstract Subject in the Observer pattern." alt="" coords="200,20,365,171"/>
+<area shape="rect" id="node4" href="$classObserver.html" title="Abstract Observer in the Observer pattern." alt="" coords="389,49,507,141"/>
+</map>

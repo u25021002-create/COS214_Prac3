@@ -70,7 +70,9 @@ public:
     void reportStatus() const override;
     int getCapacity() const override;
 
-    /** @brief Returns the number of direct children (for tests/inspection). */
+    /** @brief Returns the number of direct children (for tests/inspection). 
+     *  @return num of direct children curr owned by this group
+    */
     size_t childCount() const;
 
     /**

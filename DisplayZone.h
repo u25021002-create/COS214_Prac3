@@ -38,7 +38,7 @@ protected:
     void applyLocalPolicy(const EventNotice& notice) override;
 
 private:
-    bool outdoor;
+    bool outdoor; ///< True if this area exhibit stand in open air
 };
 
 #endif

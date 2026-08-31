@@ -16,7 +16,7 @@ public:
     /** 
      * @brief construct merchandise vendor stall
      * @param name Display name of stall
-     * @param capcity Max customers 
+     * @param capacity Max customers 
      */
     MerchStall(const std::string& name, int capacity);
 
@@ -25,7 +25,7 @@ public:
     void reportStatus() const override;
 
     /** @brief Sells items, decreasing stock (never below zero). 
-     *  @param unit Num of items sold
+     *  @param units Num of items sold
     */
     void sell(int units);
 
@@ -37,7 +37,7 @@ public:
 
 
 private:
-    int stock;
+    int stock; ///< Units cu in stock
 };
 
 #endif

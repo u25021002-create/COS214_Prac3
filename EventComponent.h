@@ -44,8 +44,8 @@ public:
     const std::string& getName() const;
 
 protected:
-    std::string name;
-    bool open_;
+    std::string name; ///< Displa name, st at constrcution
+    bool open_; ///< Wheather the component curr consider self open
 };
 
 #endif
